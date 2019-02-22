@@ -1,0 +1,27 @@
+<RCC>
+  <qresource prefix="/">
+    <file>background.png</file>
+    <file>1.png</file>
+	<file>Carrot.jpg</file>
+	<file>Carrot8.jpg</file>
+	<file>Carrot12.jpg</file>
+	<file>Carrot16.jpg</file>
+	<file>hungry.png</file>
+	<file>MapBackground.jpg.png</file>
+	<file>MapBackground8.jpg</file>
+	<file>MapBackground16.jpg</file>
+	<file>MapBackground12.jpg</file>
+	<file>Monster16.jpg</file>
+	<file>Monster12.jpg</file>
+	<file>Monster8.jpg</file>
+	<file>PlayBackground.png</file>
+	<file>Wall.jpg</file>
+	<file>Wall8.jpg</file>
+    <file>Wall16.jpg</file>
+	<file>Wall12.jpg</file>
+	<file>Way8.jpg</file>
+	<file>Way12.jpg</file>
+	<file>Way16.jpg</file>
+	<file>carroticon.ico</file>
+  </qresource>
+</RCC>

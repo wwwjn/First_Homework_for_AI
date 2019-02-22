@@ -1,0 +1,130 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'Play.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtGui import QIcon
+import MainWindowPic
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(1000, 600)
+        self.setWindowIcon(QIcon(":/carroticon.ico"))
+        self.gridLayoutWidget = QtWidgets.QWidget(Form)
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(640, 280, 296, 80))
+        self.gridLayoutWidget.setObjectName("gridLayoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.MapSize = QtWidgets.QComboBox(self.gridLayoutWidget)
+        self.MapSize.setObjectName("MapSize")
+        self.MapSize.addItem("")
+        self.MapSize.addItem("")
+        self.MapSize.addItem("")
+        self.gridLayout.addWidget(self.MapSize, 0, 1, 1, 1)
+        self.label = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
+        self.label_2 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 1, 0, 1, 1)
+        self.BarrierRatio = QtWidgets.QComboBox(self.gridLayoutWidget)
+        self.BarrierRatio.setObjectName("BarrierRatio")
+        self.BarrierRatio.addItem("")
+        self.BarrierRatio.addItem("")
+        self.BarrierRatio.addItem("")
+        self.BarrierRatio.addItem("")
+        self.BarrierRatio.addItem("")
+        self.gridLayout.addWidget(self.BarrierRatio, 1, 1, 1, 1)
+        self.pushButton = QtWidgets.QPushButton(Form)
+        self.pushButton.setGeometry(QtCore.QRect(770, 420, 161, 51))
+        self.pushButton.setObjectName("pushButton")
+        self.restartButton = QtWidgets.QPushButton(Form)
+        self.restartButton.setGeometry(QtCore.QRect(770, 420, 161, 51))
+        self.restartButton.setObjectName("restartButton")
+        self.restartButton.setText("Restart")
+
+        self.pushButton_2 = QtWidgets.QPushButton(Form)
+        self.pushButton_2.setGeometry(QtCore.QRect(770, 500, 161, 51))
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.label_3 = QtWidgets.QLabel(Form)
+        self.label_3.setGeometry(QtCore.QRect(0, 0, 1000, 600))
+        self.label_3.setText("")
+        self.label_3.setPixmap(QtGui.QPixmap(":/PlayBackground.png"))
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(Form)
+        self.label_4.setGeometry(QtCore.QRect(80, 60, 480, 480))
+        self.label_4.setText("")
+        self.label_4.setPixmap(QtGui.QPixmap(":/MapBackground.jpg.png"))
+        self.label_4.setObjectName("label_4")
+        self.gridLayoutWidget_2 = QtWidgets.QWidget(Form)
+        self.gridLayoutWidget_2.setGeometry(QtCore.QRect(680, 60, 308, 196))
+        self.gridLayoutWidget_2.setObjectName("gridLayoutWidget_2")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.gridLayoutWidget_2)
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.label_5 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_5.setObjectName("label_5")
+        self.gridLayout_2.addWidget(self.label_5, 0, 0, 1, 1)
+        self.label_9 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_9.setObjectName("label_9")
+        self.gridLayout_2.addWidget(self.label_9, 2, 0, 1, 1)
+        self.label_10 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_10.setText("")
+        self.label_10.setPixmap(QtGui.QPixmap(":/Carrot8.jpg"))
+        self.label_10.setObjectName("label_10")
+        self.gridLayout_2.addWidget(self.label_10, 2, 1, 1, 1)
+        self.label_8 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_8.setText("")
+        self.label_8.setPixmap(QtGui.QPixmap(":/Wall8.jpg"))
+        self.label_8.setObjectName("label_8")
+        self.gridLayout_2.addWidget(self.label_8, 1, 1, 1, 1)
+        self.label_6 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_6.setText("")
+        self.label_6.setPixmap(QtGui.QPixmap(":/Monster8.jpg"))
+        self.label_6.setObjectName("label_6")
+        self.gridLayout_2.addWidget(self.label_6, 0, 1, 1, 1)
+        self.label_7 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_7.setObjectName("label_7")
+        self.gridLayout_2.addWidget(self.label_7, 1, 0, 1, 1)
+        self.label_3.raise_()
+        self.gridLayoutWidget.raise_()
+
+        self.restartButton.raise_()  #将restart按钮显示在下面
+
+        self.pushButton.raise_()
+
+        self.pushButton_2.raise_()
+        self.label_4.raise_()
+        self.gridLayoutWidget_2.raise_()
+
+        self.retranslateUi(Form)
+        self.pushButton_2.clicked.connect(Form.close)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Find Carrot!"))
+        self.MapSize.setItemText(0, _translate("Form", "8*8"))
+        self.MapSize.setItemText(1, _translate("Form", "12*12"))
+        self.MapSize.setItemText(2, _translate("Form", "16*16"))
+        self.label.setText(_translate("Form", "Choose Map Size"))
+        self.label_2.setText(_translate("Form", "Choose Ratio of Barriers "))
+        self.BarrierRatio.setItemText(0, _translate("Form", "10%"))
+        self.BarrierRatio.setItemText(1, _translate("Form", "15%"))
+        self.BarrierRatio.setItemText(2, _translate("Form", "20%"))
+        self.BarrierRatio.setItemText(3, _translate("Form", "25%"))
+        self.BarrierRatio.setItemText(4, _translate("Form", "30%"))
+        self.pushButton.setText(_translate("Form", "Find Carrot!"))
+        self.restartButton.setText(_translate("Form", "Restart"))
+        self.pushButton_2.setText(_translate("Form", "Exit Game"))
+        self.label_5.setText(_translate("Form", "Little Monster(Start)"))
+        self.label_9.setText(_translate("Form", "Carrot(Destination)"))
+        self.label_7.setText(_translate("Form", "Barriers"))
+
+import MainWindowPic
